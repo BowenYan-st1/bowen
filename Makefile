@@ -2,7 +2,7 @@ TARGET		  	?= main.out
 LIBPATH			:= -lgcc -L /usr/local/lib
 DYNALIB	        ?= -pthread -lm
 
-CC 				:= gcc
+CC 				:= g++
 
 INCDIRS 		:= include \
 
@@ -10,6 +10,7 @@ SRCDIRS			:= control \
                    device \
 				   project \
 				   output \
+				   learn \
 
 INCLUDE			:= $(patsubst %, -I %, $(INCDIRS))
 
